@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Projects by Chollangi Bhargav — AI, DevOps, Automation, Cloud.">
+  <title>Projects | Chollangi Bhargav</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+
+  <!-- ═══ CURSOR ════════════════════════════════════════════ -->
+  <div class="cursor-dot" aria-hidden="true"></div>
+  <div class="cursor-ring" aria-hidden="true"></div>
+
+  <!-- ═══ NAVIGATION ════════════════════════════════════════ -->
+  <nav id="nav" aria-label="Main navigation">
+    <div class="wrap nav-inner">
+      <a href="index.html" class="nav-brand"><span class="n">Bhargav</span><span class="d">.</span></a>
+      <ul class="nav-links" role="list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="experience.html">Experience</a></li>
+        <li><a href="projects.html" class="active">Projects</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="opensource.html">Open Source</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button id="themeToggle" class="btn-theme" aria-label="Switch to light mode">☀️</button>
+        <a href="#" class="btn-cv" download><i class="bx bx-download"></i> CV</a>
+        <button class="hamburger" id="hamburger" aria-expanded="false" aria-controls="mobileNav" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+    <nav id="mobileNav" class="mobile-nav" aria-label="Mobile navigation">
+      <a href="index.html">Home</a>
+      <a href="experience.html">Experience</a>
+      <a href="projects.html">Projects</a>
+      <a href="skills.html">Skills</a>
+      <a href="opensource.html">Open Source</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="events.html">Events</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </nav>
+
+  <!-- ═══ PAGE HEADER ════════════════════════════════════════ -->
+  <div class="page-header">
+    <div class="wrap tc">
+      <p class="section-badge reveal" style="justify-content:center;">Built & Shipped</p>
+      <h1 class="section-title reveal d1">Featured Projects</h1>
+      <p class="section-sub reveal d2" style="margin-inline:auto;">
+        A selection of AI systems, DevOps platforms, and cloud automation projects
+        built at scale — from RAG chatbots to agentic pipelines.
+      </p>
+    </div>
+  </div>
+
+  <!-- ═══ PROJECTS GRID ══════════════════════════════════════ -->
+  <main>
+    <section>
+      <div class="wrap">
+
+        <!-- Filter Tabs -->
+        <div class="filter-row reveal" role="tablist" aria-label="Project categories">
+          <button class="flt-tab on" data-f="all"      role="tab" aria-selected="true">All</button>
+          <button class="flt-tab"   data-f="ai"        role="tab">AI / LLM</button>
+          <button class="flt-tab"   data-f="devops"    role="tab">DevOps</button>
+          <button class="flt-tab"   data-f="automation"role="tab">Automation</button>
+          <button class="flt-tab"   data-f="cloud"     role="tab">Cloud</button>
+        </div>
+
+        <!-- ── Projects Grid ───────────────────────────────── -->
+        <div class="projects-grid">
+
+          <!-- 1 · RAG Chatbot ────────────────────────────── -->
+          <article class="card proj-card reveal" data-cat="ai" data-modal="rag">
+            <span class="badge-featured">⭐ Featured</span>
+            <img src="assets/img/azure-DevOps-WIKI-RAG-chatbot.png" alt="Azure DevOps WIKI RAG Chatbot" class="proj-thumb">
+            <h2 class="proj-title">Azure DevOps WIKI RAG Chatbot</h2>
+            <p class="proj-desc">LangChain-powered RAG pipeline grounding GPT-4 on enterprise Azure DevOps WIKI pages. Deployed on Azure with streaming responses and semantic vector search.</p>
+            <div class="tags">
+              <span class="tag tag-cyan">LangChain</span>
+              <span class="tag tag-blue">Azure</span>
+              <span class="tag tag-purp">GPT-4</span>
+              <span class="tag tag-green">RAG</span>
+            </div>
+            <div class="proj-links">
+              <button class="proj-link" data-modal="rag">Details →</button>
+            </div>
+          </article>
+
+          <!-- 2 · n8n AI Platform ────────────────────────── -->
+          <article class="card proj-card reveal d1" data-cat="automation" data-modal="n8n">
+            <span class="badge-featured">⭐ Featured</span>
+            <img src="assets/img/n8n_1.png" alt="n8n AI workflow platform" class="proj-thumb">
+            <h2 class="proj-title">AI-Driven DevOps Insights Platform</h2>
+            <p class="proj-desc">n8n + Azure DevOps AI agent automating sprint health reports, pipeline analytics, and team performance dashboards with natural-language delivery.</p>
+            <div class="tags">
+              <span class="tag tag-blue">n8n</span>
+              <span class="tag tag-purp">AI Agents</span>
+              <span class="tag tag-cyan">Azure DevOps</span>
+              <span class="tag tag-green">Automation</span>
+            </div>
+            <div class="proj-links">
+              <button class="proj-link" data-modal="n8n">Details →</button>
+            </div>
+          </article>
+
+          <!-- 3 · PRR Checklist ──────────────────────────── -->
+          <article class="card proj-card reveal d2" data-cat="ai" data-modal="prr">
+            <img src="assets/img/arch_diagram.png" alt="PRR Checklist Automation architecture" class="proj-thumb">
+            <h2 class="proj-title">PRR Audit Checklist Automation</h2>
+            <p class="proj-desc">AI-powered pipeline that auto-generates Production Readiness Review checklists by analysing Azure DevOps API specs, reducing manual review time by 70%.</p>
+            <div class="tags">
+              <span class="tag tag-amber">Azure OpenAI</span>
+              <span class="tag tag-blue">Python</span>
+              <span class="tag tag-cyan">FastAPI</span>
+              <span class="tag tag-purp">CI/CD</span>
+            </div>
+            <div class="proj-links">
+              <button class="proj-link" data-modal="prr">Details →</button>
+            </div>
+          </article>
+
+          <!-- 4 · Entegra OCR ────────────────────────────── -->
+          <article class="card proj-card reveal" data-cat="ai" data-modal="ocr">
+            <img src="assets/img/photo3.png" alt="Entegra Agentic OCR system" class="proj-thumb">
+            <h2 class="proj-title">Entegra Agentic OCR System</h2>
+            <p class="proj-desc">Agentic pipeline extracting invoice data with Document Intelligence, performing supplier web scraping, and structuring data for ML predictions and Streamlit dashboards.</p>
+            <div class="tags">
+              <span class="tag tag-blue">OCR</span>
+              <span class="tag tag-purp">AI Agents</span>
+              <span class="tag tag-green">Streamlit</span>
+              <span class="tag tag-cyan">Azure AI</span>
+            </div>
+            <div class="proj-links">
+              <button class="proj-link" data-modal="ocr">Details →</button>
+            </div>
+          </article>
+
+          <!-- 5 · YouTube Clone CI/CD ────────────────────── -->
+          <article class="card proj-card reveal d1" data-cat="devops" data-modal="ytube">
+            <div class="proj-thumb-placeholder" role="img" aria-label="YouTube Clone CI/CD pipeline">🎬</div>
+            <h2 class="proj-title">Azure YouTube Clone — Full CI/CD</h2>
+            <p class="proj-desc">End-to-end DevOps pipeline deploying a YouTube-like application on Azure App Service using multi-stage YAML pipelines, Docker, and Azure Container Registry.</p>
+            <div class="tags">
+              <span class="tag tag-blue">Azure DevOps</span>
+              <span class="tag tag-cyan">Docker</span>
+              <span class="tag tag-purp">ACR</span>
+              <span class="tag tag-green">App Service</span>
+            </div>
+            <div class="proj-links">
+              <button class="proj-link" data-modal="ytube">Details →</button>
+            </div>
+          </article>
+
+          <!-- 6 · IaC Pipeline ───────────────────────────── -->
+          <article class="card proj-card reveal d2" data-cat="cloud" data-modal="iac">
+            <div class="proj-thumb-placeholder" role="img" aria-label="IaC Pipeline Automation">⚙️</div>
+            <h2 class="proj-title">IaC Pipeline Automation Platform</h2>
+            <p class="proj-desc">Parameterised Bicep template library with dynamic CI/CD pipelines managing complete Azure Data Platform: Key Vault, Data Factory, Databricks, Storage, and Function Apps.</p>
+            <div class="tags">
+              <span class="tag tag-cyan">Bicep</span>
+              <span class="tag tag-blue">Azure</span>
+              <span class="tag tag-purp">IaC</span>
+              <span class="tag tag-amber">PowerShell</span>
+            </div>
+            <div class="proj-links">
+              <button class="proj-link" data-modal="iac">Details →</button>
+            </div>
+          </article>
+
+        </div><!-- /projects-grid -->
+      </div>
+    </section>
+  </main>
+
+  <!-- ═══ MODAL OVERLAY ═════════════════════════════════════ -->
+  <div class="modal-overlay" id="projModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-box">
+      <button class="modal-close" aria-label="Close modal"><i class="bx bx-x"></i></button>
+      <div class="modal-body"></div>
+    </div>
+  </div>
+
+  <!-- ═══ MODAL TEMPLATES (hidden) ══════════════════════════ -->
+  <template id="tpl-rag">
+    <h2 id="modalTitle" style="margin-bottom:1rem;">Azure DevOps WIKI RAG Chatbot</h2>
+    <img src="assets/img/azure-DevOps-WIKI-RAG-chatbot.png" alt="RAG Chatbot" style="width:100%;border-radius:12px;margin-bottom:1.5rem;border:1px solid var(--bd);">
+    <p style="color:var(--tx2);line-height:1.75;margin-bottom:1rem;">LangChain-powered Retrieval-Augmented Generation pipeline that grounds GPT-4 responses on entire Azure DevOps WIKI knowledge bases. Deployed as a containerised Streamlit application on Azure Container Apps.</p>
+    <h3 style="margin-bottom:0.75rem;font-size:1rem;">Key Technical Highlights</h3>
+    <ul style="color:var(--tx2);display:grid;gap:8px;padding-left:1.2rem;list-style-position:inside;">
+      <li>Azure AI Search vector store — 1536-dim embeddings via text-embedding-ada-002</li>
+      <li>LangChain ConversationalRetrievalChain with memory buffer for context retention</li>
+      <li>Azure DevOps REST API ingestion with incremental wiki sync</li>
+      <li>CI/CD pipeline: Docker → ACR → Container Apps via YAML pipeline</li>
+      <li>Streaming SSE responses for real-time answer delivery</li>
+    </ul>
+    <div class="tags" style="margin-top:1.2rem;">
+      <span class="tag tag-cyan">LangChain</span><span class="tag tag-blue">Azure OpenAI</span>
+      <span class="tag tag-purp">AI Search</span><span class="tag tag-green">Streamlit</span>
+      <span class="tag tag-amber">Docker</span><span class="tag tag-blue">Container Apps</span>
+    </div>
+  </template>
+
+  <template id="tpl-n8n">
+    <h2 id="modalTitle" style="margin-bottom:1rem;">AI-Driven DevOps Insights Platform</h2>
+    <img src="assets/img/n8n_1.png" alt="n8n platform" style="width:100%;border-radius:12px;margin-bottom:1rem;border:1px solid var(--bd);">
+    <img src="assets/img/n8n_2.png" alt="n8n platform" style="width:100%;border-radius:12px;margin-bottom:1.5rem;border:1px solid var(--bd);">
+    <p style="color:var(--tx2);line-height:1.75;margin-bottom:1rem;">n8n agentic platform orchestrating Azure DevOps data, OpenAI analysis, and automated delivery of sprint health reports, code quality insights, and team performance dashboards via Teams and email.</p>
+    <h3 style="margin-bottom:0.75rem;font-size:1rem;">Key Technical Highlights</h3>
+    <ul style="color:var(--tx2);display:grid;gap:8px;padding-left:1.2rem;list-style-position:inside;">
+      <li>n8n deployed on Azure Container Apps via Bicep + CI/CD</li>
+      <li>AI agent nodes calling Azure DevOps API for pipeline telemetry</li>
+      <li>OpenAI GPT-4 summarisation + anomaly detection for build failures</li>
+      <li>Power BI embedded dashboards generated from processed ADO data</li>
+      <li>Webhook triggers + scheduled cron for continuous reporting cycles</li>
+    </ul>
+    <div class="tags" style="margin-top:1.2rem;">
+      <span class="tag tag-blue">n8n</span><span class="tag tag-purp">AI Agents</span>
+      <span class="tag tag-cyan">Azure DevOps</span><span class="tag tag-green">Power BI</span>
+      <span class="tag tag-amber">OpenAI</span>
+    </div>
+  </template>
+
+  <template id="tpl-prr">
+    <h2 id="modalTitle" style="margin-bottom:1rem;">PRR Audit Checklist Automation</h2>
+    <img src="assets/img/arch_diagram.png" alt="Architecture diagram" style="width:100%;border-radius:12px;margin-bottom:1.5rem;border:1px solid var(--bd);">
+    <p style="color:var(--tx2);line-height:1.75;margin-bottom:1rem;">AI-powered Production Readiness Review system that analyses API specifications and automatically generates compliance checklists, reducing manual review effort by ~70%.</p>
+    <h3 style="margin-bottom:0.75rem;font-size:1rem;">Key Technical Highlights</h3>
+    <ul style="color:var(--tx2);display:grid;gap:8px;padding-left:1.2rem;list-style-position:inside;">
+      <li>OpenAPI and AsyncAPI spec parsing with structured rule-based validation</li>
+      <li>Azure OpenAI GPT-4 for natural-language PRR item generation</li>
+      <li>FastAPI backend deployed as Azure Function App</li>
+      <li>Azure Pipelines CI/CD fully automated from PR to production</li>
+      <li>Streamlit review dashboard with checklist export (PDF / XLSX)</li>
+    </ul>
+    <div class="tags" style="margin-top:1.2rem;">
+      <span class="tag tag-amber">Azure OpenAI</span><span class="tag tag-blue">Python</span>
+      <span class="tag tag-cyan">FastAPI</span><span class="tag tag-purp">CI/CD</span>
+      <span class="tag tag-green">Function Apps</span>
+    </div>
+  </template>
+
+  <template id="tpl-ocr">
+    <h2 id="modalTitle" style="margin-bottom:1rem;">Entegra Agentic OCR System</h2>
+    <p style="color:var(--tx2);line-height:1.75;margin-bottom:1rem;">Agentic pipeline that extracts structured invoice data using Azure Document Intelligence, enriches it with supplier web-scraping agents, and feeds ML models for pricing predictions.</p>
+    <h3 style="margin-bottom:0.75rem;font-size:1rem;">Key Technical Highlights</h3>
+    <ul style="color:var(--tx2);display:grid;gap:8px;padding-left:1.2rem;list-style-position:inside;">
+      <li>Azure Document Intelligence (Form Recognizer) for invoice field extraction</li>
+      <li>Playwright-based supplier web scraping agent for price benchmarking</li>
+      <li>Structured CDM (Common Data Model) output for downstream analytics</li>
+      <li>Streamlit dashboard with interactive data exploration and ML predictions</li>
+      <li>Deployed on Azure Container Apps with Key Vault secrets management</li>
+    </ul>
+    <div class="tags" style="margin-top:1.2rem;">
+      <span class="tag tag-blue">OCR</span><span class="tag tag-purp">AI Agents</span>
+      <span class="tag tag-cyan">Azure AI</span><span class="tag tag-green">Streamlit</span>
+      <span class="tag tag-amber">ML</span>
+    </div>
+  </template>
+
+  <template id="tpl-ytube">
+    <h2 id="modalTitle" style="margin-bottom:1rem;">Azure YouTube Clone — Full CI/CD</h2>
+    <video controls poster="" style="width:100%;border-radius:12px;margin-bottom:1.5rem;border:1px solid var(--bd);">
+      <source src="assets/video/azure youtube clone.mp4" type="video/mp4">
+    </video>
+    <p style="color:var(--tx2);line-height:1.75;margin-bottom:1rem;">Complete DevOps showcase: YouTube-like web application deployed on Azure App Service with multi-stage Docker build pipelines, Azure Container Registry, and full CI/CD automation.</p>
+    <h3 style="margin-bottom:0.75rem;font-size:1rem;">Key Technical Highlights</h3>
+    <ul style="color:var(--tx2);display:grid;gap:8px;padding-left:1.2rem;list-style-position:inside;">
+      <li>Multi-stage Docker build reducing final image size by 60%</li>
+      <li>Azure DevOps YAML pipeline: build → test → push to ACR → deploy</li>
+      <li>Slot-based zero-downtime deployments on Azure App Service</li>
+      <li>Application Insights monitoring with custom alerting rules</li>
+    </ul>
+    <div class="tags" style="margin-top:1.2rem;">
+      <span class="tag tag-blue">Azure DevOps</span><span class="tag tag-cyan">Docker</span>
+      <span class="tag tag-purp">ACR</span><span class="tag tag-green">App Service</span>
+      <span class="tag tag-amber">YAML</span>
+    </div>
+  </template>
+
+  <template id="tpl-iac">
+    <h2 id="modalTitle" style="margin-bottom:1rem;">IaC Pipeline Automation Platform</h2>
+    <p style="color:var(--tx2);line-height:1.75;margin-bottom:1rem;">Fully parameterised Bicep template library covering all Azure Data Platform services, backed by YAML pipelines that dynamically fetch parameters from Resource Groups and deploy with zero manual steps.</p>
+    <h3 style="margin-bottom:0.75rem;font-size:1rem;">Key Technical Highlights</h3>
+    <ul style="color:var(--tx2);display:grid;gap:8px;padding-left:1.2rem;list-style-position:inside;">
+      <li>Bicep modules for Key Vault, Data Factory, Databricks, Storage, Function Apps</li>
+      <li>Dynamic parameter retrieval via PowerShell pre-deployment scripts</li>
+      <li>Multi-environment (DEV / UAT / PRD) gate-based promotion pipelines</li>
+      <li>RBAC role assignments automated via service principal with least-privilege</li>
+      <li>Drift detection job comparing live state with desired IaC configuration</li>
+    </ul>
+    <div class="tags" style="margin-top:1.2rem;">
+      <span class="tag tag-cyan">Bicep</span><span class="tag tag-blue">Azure</span>
+      <span class="tag tag-purp">IaC</span><span class="tag tag-amber">PowerShell</span>
+      <span class="tag tag-green">YAML</span>
+    </div>
+  </template>
+
+  <!-- ═══ FOOTER ══════════════════════════════════════════════ -->
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>&copy; <span id="yr"></span> <a href="index.html">Chollangi Bhargav</a> · AI Software Engineer &amp; DevOps Specialist · Paris, France</p>
+    </div>
+    <script>document.getElementById('yr').textContent=new Date().getFullYear();</script>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

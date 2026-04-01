@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Photo gallery — talks, workshops, events, and team moments with Chollangi Bhargav.">
+  <title>Gallery | Chollangi Bhargav</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+
+  <!-- ═══ CURSOR ════════════════════════════════════════════ -->
+  <div class="cursor-dot" aria-hidden="true"></div>
+  <div class="cursor-ring" aria-hidden="true"></div>
+
+  <!-- ═══ NAVIGATION ════════════════════════════════════════ -->
+  <nav id="nav" aria-label="Main navigation">
+    <div class="wrap nav-inner">
+      <a href="index.html" class="nav-brand"><span class="n">Bhargav</span><span class="d">.</span></a>
+      <ul class="nav-links" role="list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="experience.html">Experience</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="opensource.html">Open Source</a></li>
+        <li><a href="gallery.html" class="active">Gallery</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button id="themeToggle" class="btn-theme" aria-label="Switch to light mode">☀️</button>
+        <a href="#" class="btn-cv" download><i class="bx bx-download"></i> CV</a>
+        <button class="hamburger" id="hamburger" aria-expanded="false" aria-controls="mobileNav" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+    <nav id="mobileNav" class="mobile-nav" aria-label="Mobile navigation">
+      <a href="index.html">Home</a>
+      <a href="experience.html">Experience</a>
+      <a href="projects.html">Projects</a>
+      <a href="skills.html">Skills</a>
+      <a href="opensource.html">Open Source</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="events.html">Events</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </nav>
+
+  <!-- ═══ PAGE HEADER ════════════════════════════════════════ -->
+  <div class="page-header">
+    <div class="wrap tc">
+      <p class="section-badge reveal" style="justify-content:center;">Behind the Scenes</p>
+      <h1 class="section-title reveal d1">Gallery</h1>
+      <p class="section-sub reveal d2" style="margin-inline:auto;">
+        Moments from hackathons, conferences, AI workshops, team offsites,
+        and the everyday work of building in the open.
+      </p>
+    </div>
+  </div>
+
+  <!-- ═══ GALLERY GRID ════════════════════════════════════== -->
+  <main>
+    <section>
+      <div class="wrap">
+        <div class="gallery-grid">
+
+          <div class="gallery-item reveal" data-caption="Adopt AI — Workshop Day 1">
+            <img src="assets/img/Adopt_AI.jpg" alt="Adopt AI workshop" loading="lazy">
+            <div class="gallery-overlay"><span class="gallery-caption">Adopt AI — Workshop</span></div>
+          </div>
+
+          <div class="gallery-item reveal d1" data-caption="Adopt AI — Collaboration session">
+            <img src="assets/img/Adopt_AI1.jpg" alt="Adopt AI collaboration" loading="lazy">
+            <div class="gallery-overlay"><span class="gallery-caption">Adopt AI — Collaboration</span></div>
+          </div>
+
+          <div class="gallery-item reveal d2" data-caption="Adopt AI — Team presentation">
+            <img src="assets/img/Adopt_AI2.jpg" alt="Adopt AI presentation" loading="lazy">
+            <div class="gallery-overlay"><span class="gallery-caption">Adopt AI — Presentation</span></div>
+          </div>
+
+          <div class="gallery-item reveal" data-caption="Gen AI Team — Paris">
+            <img src="assets/img/Gen_AI_team.png" alt="Gen AI team photo" loading="lazy">
+            <div class="gallery-overlay"><span class="gallery-caption">Gen AI Team · Paris</span></div>
+          </div>
+
+          <div class="gallery-item reveal d1" data-caption="Databricks Data + AI Summit 2024">
+            <img src="assets/img/databricks_2024.png" alt="Databricks 2024 summit" loading="lazy">
+            <div class="gallery-overlay"><span class="gallery-caption">Databricks Data+AI Summit 2024</span></div>
+          </div>
+
+          <div class="gallery-item reveal d2" data-caption="Databricks 2025">
+            <img src="assets/img/databricks_2025.jpg" alt="Databricks 2025" loading="lazy">
+            <div class="gallery-overlay"><span class="gallery-caption">Databricks 2025</span></div>
+          </div>
+
+          <div class="gallery-item reveal" data-caption="API Days Conference — Paris">
+            <img src="assets/img/API_days.png" alt="API Days Paris" loading="lazy">
+            <div class="gallery-overlay"><span class="gallery-caption">API Days Conference · Paris</span></div>
+          </div>
+
+          <div class="gallery-item reveal d1" data-caption="n8n Automation Workshop">
+            <img src="assets/img/n8n_1.png" alt="n8n workshop" loading="lazy">
+            <div class="gallery-overlay"><span class="gallery-caption">n8n Automation Workshop</span></div>
+          </div>
+
+          <div class="gallery-item reveal d2" data-caption="n8n AI Pipeline Demo">
+            <img src="assets/img/n8n_2.png" alt="n8n AI demo" loading="lazy">
+            <div class="gallery-overlay"><span class="gallery-caption">n8n AI Pipeline Demo</span></div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ═══ LIGHTBOX ═══════════════════════════════════════════ -->
+  <div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer">
+    <button class="lb-close" id="lbClose" aria-label="Close lightbox"><i class="bx bx-x"></i></button>
+    <img id="lbImg" src="" alt="">
+    <p id="lbCaption" class="lb-caption"></p>
+  </div>
+
+  <!-- ═══ FOOTER ══════════════════════════════════════════════ -->
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>&copy; <span id="yr"></span> <a href="index.html">Chollangi Bhargav</a> · AI Software Engineer &amp; DevOps Specialist · Paris, France</p>
+    </div>
+    <script>document.getElementById('yr').textContent=new Date().getFullYear();</script>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
