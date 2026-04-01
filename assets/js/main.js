@@ -26,10 +26,8 @@ const CFG = {
 
   // ── Typewriter phrases (hero section)
   phrases: [
-    'AI Software Engineer',
+    'AI Engineer',
     'DevOps Specialist',
-    'Cloud Architect',
-    'RAG & LLM Builder',
     'Automation Expert',
   ],
 
